@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+    background-color: rgb(13, 2, 50);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(246, 182, 53);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin:0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: blueviolet;
+    font-size : 1.2rem;
+}
+main hr{
+    border: 0;
+    background: rgb(246, 182, 53);
+    height: 1px;
+    margin: 40px 84px;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+.firstsection > div{
+    width: 30%;
+}
+.leftsection{
+    
+    font-size: 2rem;
+    
+}
+.rightsection img{
+    width: 95%;
+    height: 95%;
+    margin: -12px 0;
+    
+}
+.purple{
+    color: rgb(187, 119, 250);
+}
+.text-gray{
+    color: gray;
+}
+#element{
+    color: rgb(187, 119, 250);
+}
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -12px;
+}
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+.vertical-desc{
+    position: relative;
+    top: 100px;
+    left: -90px;
+}
+    </style>
+</head>
+
+    <header>
+        <nav>
+            <div class="left">SMITA'S PORTFOLIO</div>
+            <div class="right">
+                <UL>
+                    <li><a href="/">HOME</li></a>
+                    <li><a href="/">ABOUT</li></a>
+                    <li><a href="/">SERVICES</li></a>
+                    <li><a href="/">PROJECTS</li></a>
+                    <li><a href="/">CONTACT ME</li></a>
+                </UL>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi !! My name is <span class="purple">SMITA SHARMA.</span>
+                <div> I'm a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="wd2.webp" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I've covered so far </span>
+            <h1 >Courses, Trainings & Internships </h1>
+            <ol>
+                <li>Data Structures and Algorithms.</li>
+                <li>Google Cloud.</li>
+                <li>Microsoft Azure.</li>
+                <li>Python and SQL Fundamentals.</li>
+                <li>Sentiments Analysis using Python.</li>
+                <li>Java Developer Intern @ Codsoft.</li>
+                <li>Data Science & Machine Learning Intern @ Edureka.</li>
+            </ol>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        
+    <script>
+    var typed = new Typed('#element', {
+        strings: ['Java Developer.', 'Python Developer.', 'Web Designer.', 'Web Developer.'],
+        typeSpeed: 50,
+    });
+    </script>
+    <footer>
+        <p style="margin-right: 0cm;
+        color: white;
+        font-size: xx-large;
+        background-color: rgb(246, 182, 53)">Contact me at: smita.sharma0502@gmail.com</p>
+    </footer>
+</body>
+</html>
